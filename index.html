@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu portifólio</title>
+</head>
+<body>
+    <header class="container text-center">
+        <img src="img/foto-de-perfil.jpeg" alt="avatar da Gabriela" class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+        <p class="lead">Eu sou Gabriela</p>
+        <h1>Eu estudo programação</h1>
+        <p>Eu sou estudante do 2°ano do Ensino Médio, e estou me aprofundando no mundo da programação. No momento estou
+            aprendendo HTML, CSS, JavaScript e Scratch. Veja os projetos que já desenvolvi!</p>
+        <p>Minhas Habilidades</p>
+        <div>
+            <p class="badge bg-secondary">HTML</p>
+            <p class="badge bg-secondary">CSS</p>
+            <p class="badge bg-secondary">JavaScript</p>
+            <p class="badge bg-secondary">Scratch</p>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+            crossorigin="anonymous"></script>
+    </header>
+    <main class="container mt-4">
+        <h2>Meus projetos</h2>
+        <div class="row">
+            <!-- Projeto 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/Projeto01.jpeg" class="card-img-top" alt="Imagem do projeto de Criando minha aventura">
+                    <div class="card-body">
+                      <h5 class="card-title">Meu jogo: O Cristal Perdido</h5>
+                      <p class="card-text">Este jogo é uma jornada interativa onde o jogador avança por etapas de uma história ou missão. A cada clique no botão "Próximo", o jogador é levado a um novo passo, descobrindo mais sobre a narrativa ou enfrentando novos desafios. O design simples e imersivo cria uma experiência envolvente, ideal para contar histórias ou criar experiências educativas.</p>
+                      <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja o projeto</button>
+                    </div>
+                  </div>
+            </div>
+            <!-- Projeto 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/Projeto02.jpeg" class="card-img-top" alt="Imagem do projeto Recomendações de filmes do Studio Ghibli">
+                    <div class="card-body">
+                      <h5 class="card-title">Meu site de recomendações: GABYMINAMFLIX</h5>
+                      <p class="card-text">O GABYMINAMFLIX é um site dedicado ao Studio Ghibli, com um design sofisticado e moderno. Ele apresenta um fundo verde suave e textos brancos, com uma navegação fluida entre filmes do estúdio, incluindo vídeos destacados. As imagens dos filmes ganham destaque ao passar o mouse sobre elas, oferecendo uma experiência visual agradável e interativa.</p>
+                      <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja o projeto</button>
+                    </div>
+                  </div>
+            </div>
+            <!-- Projeto 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/Projeto03.jpeg" class="card-img-top" alt="Imagem do projeto jogo Trilha da joaninha">
+                    <div class="card-body">
+                      <h5 class="card-title">Meu jogo: Trilha da joaninha</h5>
+                      <p class="card-text">No jogo Trilha da joaninha, a joaninha começa no centro da tela e se move em direção ao ponteiro do mouse, deixando uma linha preta enquanto se desloca. A cada movimento, ela cria uma trilha visual interessante. O jogo continua até que o palco seja clicado, momento em que a ação é interrompida. É uma experiência simples, mas divertida, que explora o movimento e o desenho no Scratch.</p>
+                      <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Veja o projeto</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal 1 -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Meu jogo: O Cristal Perdido</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>O projeto é um jogo interativo baseado em uma página web, desenvolvido com HTML, CSS e JavaScript. O objetivo é criar uma experiência de narrativa onde o jogador avança por etapas de uma história ou missão ao clicar no botão "Próximo". A cada nova etapa, o jogador é apresentado a novos desafios, informações ou escolhas que o levam a descobrir mais sobre o enredo.</p> 
+                    <p>A estrutura do site utiliza HTML para organizar o conteúdo semântico, como as divisões de etapas da história e a navegação entre elas. O CSS é responsável por estilizar a página, criando uma atmosfera visual envolvente, com cores e tipografia que ajudam a imergir o jogador na experiência do jogo. Além disso, o JavaScript é usado para controlar a interação entre o jogador e a história, permitindo que as etapas se alternem conforme o clique no botão de avanço.</p> 
+                    <p>O HTML organiza a página com um cabeçalho que introduz o conceito do jogo e uma área principal (.container) onde a história se desenrola em etapas (.passo). Cada "passo" é um bloco de conteúdo que se torna visível à medida que o jogador avança, e o design é simplificado para manter o foco na narrativa e na interatividade. A transição entre os "passos" é controlada por JavaScript, o que permite que o jogador tenha controle sobre o ritmo da história.</p> 
+                    <p>O CSS personaliza o visual do jogo, utilizando cores e fontes que criam um ambiente imersivo, com um design simples e eficiente. A utilização de propriedades de layout, como flexbox, permite que o conteúdo se ajuste de forma fluida a diferentes tamanhos de tela. O projeto foca em uma experiência de usuário intuitiva, com uma interface simples, mas envolvente, permitindo que o jogador se concentre na narrativa sem distrações desnecessárias.</p> 
+                    <p>Este projeto é um exemplo de como é possível criar uma experiência de jogo envolvente com tecnologias web básicas, utilizando HTML, CSS e JavaScript de maneira simples e eficaz. O objetivo é criar uma história interativa que pode ser expandida com novas etapas e funcionalidades, como a introdução de escolhas ou a personalização da narrativa.</p>
+                    <img src="img/Projeto01.jpeg" class="img-fluid w-100" alt="Imagem representativa do projeto Passos do Destino">
+                </div>
+                <div class="modal-footer">
+                  <a href="https://gaby245.github.io/criando-sua-aventura/">Ver projeto ao vivo</a>
+                  <a href="https://github.com/gaby245/criando-sua-aventura">Ver código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Modal 2 -->
+<div class="modal" id="modal2" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Meu site: GABYMINAMFLIX</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>O projeto GABYMINAMFLIX é um site dedicado ao Studio Ghibli, um dos estúdios de animação mais renomados mundialmente, com um design moderno e sofisticado. O objetivo principal é fornecer uma plataforma para os fãs do Studio Ghibli, onde podem explorar e descobrir filmes do estúdio, com uma navegação visualmente agradável e interativa.</p>
+                <p>A estrutura do site é construída com HTML, que organiza a semântica e o conteúdo, e CSS, que estiliza a página para proporcionar uma experiência agradável ao usuário. O design do site é baseado em um esquema de cores verdes suaves, combinados com textos brancos, criando um contraste visual que torna a navegação fluída e confortável. O layout é responsivo, garantindo que a experiência do usuário seja otimizada em dispositivos de diferentes tamanhos de tela, como desktops e dispositivos móveis.</p>
+                <p>O HTML é usado para estruturar o conteúdo da página, incluindo uma lista de filmes destacados do Studio Ghibli. Cada filme é apresentado com uma imagem de capa que ganha destaque visual ao passar o mouse sobre ela, utilizando efeitos de hover que tornam a interação mais interessante. A navegação é facilitada por meio de botões e links interativos, que levam o usuário a seções adicionais do site, como descrições dos filmes e vídeos relacionados.</p>
+                <p>O CSS, por sua vez, é responsável por criar a estética visual do site, utilizando propriedades de layout flexível para garantir que os elementos se ajustem adequadamente a qualquer tamanho de tela. As imagens dos filmes são tratadas com efeitos visuais, como transições suaves e hover effects, para melhorar a interação. Além disso, o design utiliza fontes importadas do Google Fonts para garantir uma tipografia agradável e legível.</p>
+                <p>O JavaScript é utilizado para controlar a interatividade do site, principalmente no que diz respeito aos efeitos de hover nas imagens dos filmes e nas animações de transição entre as seções. O código é simples e eficiente, garantindo uma experiência de navegação sem interrupções.</p>
+                <p>Este projeto é um exemplo de como tecnologias web básicas podem ser usadas para criar uma plataforma interativa e visualmente atraente, sem a necessidade de scripts complexos. O foco é proporcionar uma experiência agradável aos usuários, oferecendo uma navegação intuitiva e acessível, ideal para fãs do Studio Ghibli que desejam explorar os filmes do estúdio de maneira simples e envolvente.</p>
+                <img src="img/Projeto02.jpeg" class="img-fluid w-100" alt="Imagem representativa do site Recomendações de filmes do Studio Ghibli">
+            </div>
+            <div class="modal-footer">
+              <a href="https://gaby245.github.io/gabyminamflix/">Ver projeto ao vivo</a>
+              <a href="https://github.com/gaby245/gabyminamflix">Ver código do projeto</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal" id="modal3" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Meu jogo: Trilha da joaninha</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>O projeto Trilha da Joaninha é um jogo interativo simples, desenvolvido utilizando o Scratch, que proporciona uma experiência divertida e educativa. No jogo, o objetivo é guiar a joaninha para seguir o ponteiro do mouse enquanto ela deixa uma trilha preta pelo caminho. A cada movimento, a joaninha cria um padrão visual interessante, e o jogo continua até que o usuário clique em qualquer parte da tela, interrompendo a ação. Esse tipo de jogo simples é ideal para explorar conceitos de movimento e animação de maneira intuitiva e envolvente.</p>
+                <p>A estrutura do projeto é construída com o Scratch, que utiliza blocos de código visuais para programar a interação entre a joaninha e o usuário. O movimento da joaninha é controlado por um conjunto de blocos que a fazem seguir o ponteiro do mouse. Isso cria uma interação direta entre o jogador e o jogo, tornando-o imersivo e interessante. A trilha deixada pela joaninha é gerada por blocos de código que desenham uma linha preta sempre que a joaninha se move.</p>
+                <p>O jogo é focado na simplicidade e na diversão, sem a complexidade de muitos jogos mais avançados. A ideia é oferecer uma experiência acessível para iniciantes, ao mesmo tempo que explora conceitos importantes de programação, como movimento, controle de eventos e animação. O jogo pode ser uma ferramenta educativa, ideal para ensinar os fundamentos da programação a jovens aprendizes, enquanto eles se divertem com a interatividade.</p>
+                <p>Embora o jogo tenha uma mecânica simples, ele permite que o jogador explore diferentes caminhos e padrões à medida que move a joaninha pela tela. Isso cria um ambiente descontraído e livre de pressões, ideal para quem está começando a entender como a programação pode ser aplicada para criar jogos. O design visual do jogo é minimalista, focado em um único elemento (a joaninha) e sua interação com o ambiente ao seu redor, proporcionando uma experiência visualmente limpa e agradável.</p>
+                <p>Este projeto é uma ótima demonstração de como é possível criar jogos e experiências interativas simples utilizando o Scratch. Ele foca na interação básica e no movimento, utilizando as ferramentas do Scratch de maneira criativa para criar um jogo divertido e educativo que pode ser expandido ou modificado para criar novas funcionalidades ou desafios para o jogador.</p>
+                <img src="img/Projeto03.jpeg" class="img-fluid w-100" alt="Imagem representativa do projeto Trilha da joaninha">
+            </div>
+            <div class="modal-footer">
+              <a href="https://scratch.mit.edu/projects/817357438/fullscreen/">Ver projeto ao vivo</a>
+              <a href="https://scratch.mit.edu/projects/817357438/editor/">Ver código do projeto</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer class="container py-4">
+        <h2>Entre em contato</h2>
+        <div>
+            <i class="bi bi-github"></i>
+            <a href="https://github.com/gaby245">Github</a>
+            <i class="bi bi-puzzle-fill"></i>
+            <a href="https://scratch.mit.edu/users/Gaby_90/">Scratch</a>
+        </div>
+    <p class="my-5 text-center">© Copyright 2025. Produzido por Gabriela M. Di Dio</p>
+    </footer>
+
+</body>
+
+</html>
